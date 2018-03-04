@@ -2,7 +2,7 @@
 
 ITBSBC is a script for playing Into The Breach with a Steel Battalion Controller, because why not.
 
-The aiming lever acts as the mouse; the trigger button is left click, the lock on button is right click. The script assumes you're playing the game on your primary display.
+The aiming lever acts as the mouse; the trigger button is left click, the lock on button is right click. The script assumes you're playing the game on your primary display. The 'Reset turn' macro is also pretty much hardcoded for a 1920 x 1080 monitor, but that's pretty easy to change.
 
 # Installation
 
