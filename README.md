@@ -16,7 +16,7 @@ The aiming lever acts as the mouse; the trigger button is left click, the lock o
 1. Run the SBC driver wrapper (`Release\Steel_Batallion_64_v2.exe` in the SBC folder)
     * Select File > Open, choose the ITBSBC.cs script, and click "Start"
     * The controller buttons will flash five times if the driver launched successfully.
-1. Play the game.
+1. Enjoy the game with your completely over-the-top controller!
 
 # Button mapping
 
