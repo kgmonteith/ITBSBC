@@ -15,7 +15,12 @@ using System.Linq;
 namespace SBC{
     
     public class DynamicClass
-    {        
+    {
+        // Change these values modify where the "reset macro" clicks the mouse when the Eject button is pressed
+        int reset_turn_confirm_x_from_center = -65;   // 65 pixels left from center
+        int reset_turn_confirm_y_from_center = 60;    // 60 pixels down from center
+
+
         String debugString = "";
         static SteelBattalionController controller;
         vJoy joystick;
@@ -287,7 +292,7 @@ namespace SBC{
             } else if(!controller.GetButtonState((int)ButtonEnum.Eject) && eject_down) {
                 controller.SetLEDState(ControllerLEDEnum.EmergencyEject, baseLineIntensity[(int)ControllerLEDEnum.EmergencyEject]);
                 controller.sendKeyPress(SBC.Key.BackSpace);
-                MouseOperations.SetCursorPosition((screen_width/2)-65, (screen_height/2)+60);
+                MouseOperations.SetCursorPosition((screen_width/2)+reset_turn_confirm_x_from_center, (screen_height/2)+reset_turn_confirm_y_from_center);
                 System.Threading.Thread.Sleep(50);
                 MouseOperations.MouseEvent(MouseOperations.MouseEventFlags.LeftDown);
                 System.Threading.Thread.Sleep(50);
